@@ -1,0 +1,13 @@
+{
+  "title": "FMTNA: Failure-Mode-Typed Neural Abduction for Neuro-Symbolic Reasoning",
+  "summary": "Generated a 16-page publication-ready LaTeX paper titled 'Failure-Mode-Typed Neural Abduction: Structured Hallucination Prevention in Neuro-Symbolic Text-to-Logic Reasoning'. The paper covers: Introduction with 6 structured contributions, Related Work (neuro-symbolic architectures, text-to-logic extraction, hallucination detection), Methods (problem formulation, failure-mode classification algorithm, three type-specialized LLM dispatch operations, proof meta-interpreter, grounding ratio computation), Experiments (RuleTaker 200 examples + FOLIO 100 examples, Type-B BM25 precision recovery experiment), Discussion (depth-stratified analysis, Type-A hypothesis, FOLIO underperformance explanation, limitations), and Conclusion. Two figures included: fig_arch_v0.jpg (21:9 FMTNA pipeline architecture, placed as figure* at top of page 3) and fig_results_v0.jpg (21:9 multi-panel results chart, placed as figure* in experiments section). Three tables included: depth-stratified RuleTaker results, Type-B BM25 ablation, and summary comparison table. Bibliography built via aii-semscholar-bib with 13 entries covering all citations. All footnotes with GitHub artifact URLs preserved as \\url{} references. PDF compiled successfully with pdflatex + bibtex (4-pass compilation), producing a clean 16-page PDF with no layout errors. Visual review of all 16 pages confirmed proper figure placement, readable tables, and no cut-off or overlapping content.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig_arch_v0.jpg",
+      "figures/fig_results_v0.jpg"
+    ]
+  }
+}

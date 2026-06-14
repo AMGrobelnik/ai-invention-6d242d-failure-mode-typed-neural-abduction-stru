@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="666"
+  viewBox="0 0 932 666" role="img" aria-label="Artifact workflow">
+  <style>
+    a { cursor: pointer; }
+    a:hover rect.card { stroke-width: 2; }
+  </style>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="rgba(0,0,0,0.45)"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+      orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#8b949e"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#0d1117"/>
+<g><title></title><path d="M 212.0 442.0 C 212.0 480.7, 498.0 489.3, 498.0 528.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title></title><path d="M 498.0 442.0 C 498.0 480.7, 498.0 489.3, 498.0 528.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title></title><path d="M 784.0 442.0 C 784.0 480.7, 498.0 489.3, 498.0 528.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title></title><path d="M 498.0 74.0 C 498.0 112.7, 212.0 121.3, 212.0 160.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title></title><path d="M 498.0 74.0 C 498.0 112.7, 498.0 121.3, 498.0 160.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title></title><path d="M 498.0 74.0 C 498.0 112.7, 784.0 121.3, 784.0 160.0" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title>uses: dataset</title><path d="M 498.0 258.0 C 498.0 296.7, 212.0 305.3, 212.0 344.0" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title>uses: dataset</title><path d="M 498.0 258.0 C 498.0 296.7, 498.0 305.3, 498.0 344.0" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<g><title>uses: dataset</title><path d="M 498.0 258.0 C 498.0 296.7, 784.0 305.3, 784.0 344.0" fill="none" stroke="#f59e0b" stroke-width="1.6" stroke-opacity="0.8" marker-end="url(#arrow)"/></g>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru" target="_top">
+  <g class="node">
+    <rect class="card" x="413.0" y="22.0" width="170" height="52" rx="26"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <text x="498.0" y="44.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">&#128161;</text>
+    <text x="498.0" y="60.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5"
+      font-weight="600" fill="#e6edf3">Hypothesis</text>
+  </g>
+</a>
+<text x="22" y="214.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8b949e">R1</text>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-1/research-1" target="_top">
+  <g class="node">
+    <title>Failure-Mode Classification in Neuro-Symbolic Reasoning: RuleTaker, CLUTRR, and Systems</title>
+    <rect class="card" x="86.0" y="162.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="86.0" y="162.0" width="4" height="96" rx="2" fill="#3b82f6"/>
+    <rect x="98.0" y="173.0" width="68" height="17" rx="8.5" fill="#3b82f6"/>
+    <text x="131.8" y="185.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">RESEARCH</text>
+    <text x="173.6" y="185.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-1/research-1</text>
+    <text x="100.0" y="210.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="100.0" dy="0">Failure-Mode Classification in</tspan><tspan x="100.0" dy="14">Neuro-Symbolic Reasoning: RuleTaker,</tspan><tspan x="100.0" dy="14">CLUTRR, and Systems</tspan></text>
+  </g>
+</a>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-1/dataset-1" target="_top">
+  <g class="node">
+    <title>RuleTaker and FOLIO Datasets for Neuro-Symbolic Reasoning</title>
+    <rect class="card" x="372.0" y="162.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="372.0" y="162.0" width="4" height="96" rx="2" fill="#f59e0b"/>
+    <rect x="384.0" y="173.0" width="61" height="17" rx="8.5" fill="#f59e0b"/>
+    <text x="414.7" y="185.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">DATASET</text>
+    <text x="453.4" y="185.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-1/dataset-1</text>
+    <text x="386.0" y="210.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="386.0" dy="0">RuleTaker and FOLIO Datasets for</tspan><tspan x="386.0" dy="14">Neuro-Symbolic Reasoning</tspan></text>
+  </g>
+</a>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-1/experiment-1" target="_top">
+  <g class="node">
+    <title>FMTNA Pipeline: Failure-Mode-Typed Neural Abduction vs Undifferentiated Baseline</title>
+    <rect class="card" x="658.0" y="162.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="658.0" y="162.0" width="4" height="96" rx="2" fill="#8b5cf6"/>
+    <rect x="670.0" y="173.0" width="80" height="17" rx="8.5" fill="#8b5cf6"/>
+    <text x="710.0" y="185.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">EXPERIMENT</text>
+    <text x="758.0" y="185.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-1/experiment-1</text>
+    <text x="672.0" y="210.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="672.0" dy="0">FMTNA Pipeline: Failure-Mode-Typed</tspan><tspan x="672.0" dy="14">Neural Abduction vs Undifferentiated</tspan><tspan x="672.0" dy="14">Baseline</tspan></text>
+  </g>
+</a>
+<text x="22" y="398.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#8b949e">R2</text>
+<line x1="86" y1="302.0" x2="910" y2="302.0" stroke="#21262d" stroke-dasharray="3 5"/>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-2/experiment-1" target="_top">
+  <g class="node">
+    <title>FMTNA: Typed Neural Abduction for Neuro-Symbolic Reasoning</title>
+    <rect class="card" x="86.0" y="346.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="86.0" y="346.0" width="4" height="96" rx="2" fill="#8b5cf6"/>
+    <rect x="98.0" y="357.0" width="80" height="17" rx="8.5" fill="#8b5cf6"/>
+    <text x="138.0" y="369.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">EXPERIMENT</text>
+    <text x="186.0" y="369.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-2/experiment-1</text>
+    <text x="100.0" y="394.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="100.0" dy="0">FMTNA: Typed Neural Abduction for</tspan><tspan x="100.0" dy="14">Neuro-Symbolic Reasoning</tspan></text>
+  </g>
+</a>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-2/experiment-2" target="_top">
+  <g class="node">
+    <title>FMTNA Multi-Benchmark Evaluation: Typed Failure Dispatch vs Undifferentiated Abduction</title>
+    <rect class="card" x="372.0" y="346.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="372.0" y="346.0" width="4" height="96" rx="2" fill="#8b5cf6"/>
+    <rect x="384.0" y="357.0" width="80" height="17" rx="8.5" fill="#8b5cf6"/>
+    <text x="424.0" y="369.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">EXPERIMENT</text>
+    <text x="472.0" y="369.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-2/experiment-2</text>
+    <text x="386.0" y="394.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="386.0" dy="0">FMTNA Multi-Benchmark Evaluation:</tspan><tspan x="386.0" dy="14">Typed Failure Dispatch vs</tspan><tspan x="386.0" dy="14">Undifferentiated Abduction</tspan></text>
+  </g>
+</a>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/tree/main/round-2/experiment-3" target="_top">
+  <g class="node">
+    <title>Type-B Precision Recovery via BM25-Enforced Passage Retrieval on RuleTaker and FOLIO</title>
+    <rect class="card" x="658.0" y="346.0" width="252" height="96" rx="10"
+      fill="#161b22" stroke="#30363d" stroke-width="1" filter="url(#shadow)"/>
+    <rect x="658.0" y="346.0" width="4" height="96" rx="2" fill="#8b5cf6"/>
+    <rect x="670.0" y="357.0" width="80" height="17" rx="8.5" fill="#8b5cf6"/>
+    <text x="710.0" y="369.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+      font-size="9.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">EXPERIMENT</text>
+    <text x="758.0" y="369.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="9"
+      fill="#8b949e">round-2/experiment-3</text>
+    <text x="672.0" y="394.0" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600"
+      fill="#e6edf3"><tspan x="672.0" dy="0">Type-B Precision Recovery via</tspan><tspan x="672.0" dy="14">BM25-Enforced Passage Retrieval on</tspan><tspan x="672.0" dy="14">RuleTaker and FOLIO</tspan></text>
+  </g>
+</a>
+<a href="https://github.com/AMGrobelnik/ai-invention-6d242d-failure-mode-typed-neural-abduction-stru/blob/main/paper.pdf" target="_top">
+  <g class="node">
+    <rect class="card" x="403.0" y="530.0" width="190" height="72" rx="10"
+      fill="#161b22" stroke="#e11d48" stroke-width="1.4" filter="url(#shadow)"/>
+    <text x="498.0" y="560.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16">&#128196;</text>
+    <text x="498.0" y="580.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5"
+      font-weight="700" fill="#e6edf3">Research Paper</text>
+  </g>
+</a>
+<g>
+  <title>uses: dataset</title>
+  <rect x="334.8" y="293.0" width="40" height="16" rx="8"
+    fill="#0d1117" stroke="#f59e0b" stroke-width="1"/>
+  <text x="355.0" y="304.0" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="8.5" font-weight="600" letter-spacing="0.4" fill="#f59e0b">USES</text>
+</g>
+<g>
+  <title>uses: dataset</title>
+  <rect x="477.8" y="279.9" width="40" height="16" rx="8"
+    fill="#0d1117" stroke="#f59e0b" stroke-width="1"/>
+  <text x="498.0" y="290.9" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="8.5" font-weight="600" letter-spacing="0.4" fill="#f59e0b">USES</text>
+</g>
+<g>
+  <title>uses: dataset</title>
+  <rect x="694.7" y="306.1" width="40" height="16" rx="8"
+    fill="#0d1117" stroke="#f59e0b" stroke-width="1"/>
+  <text x="714.9" y="317.1" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+    font-size="8.5" font-weight="600" letter-spacing="0.4" fill="#f59e0b">USES</text>
+</g>
+<circle cx="27" cy="638.0" r="5" fill="#3b82f6"/><text x="38" y="641.5" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">research</text><circle cx="120.2" cy="638.0" r="5" fill="#f59e0b"/><text x="131.2" y="641.5" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">dataset</text><circle cx="207.0" cy="638.0" r="5" fill="#8b5cf6"/><text x="218.0" y="641.5" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">experiment</text><circle cx="313.0" cy="638.0" r="5" fill="#e11d48"/><text x="324.0" y="641.5" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#8b949e">paper</text><text x="390.0" y="641.5" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" font-style="italic" fill="#8b949e">&#8594; arrows show what each artifact builds on &#183; click any card</text>
+</svg>

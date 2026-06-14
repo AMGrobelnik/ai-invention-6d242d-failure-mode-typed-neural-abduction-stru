@@ -1,0 +1,115 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alansari and Awothan(2025)]{Alansari2025}
+Ali Alansari and Husam~Al Awothan.
+\newblock Large language models hallucination: A comprehensive survey.
+\newblock \emph{Computer Science Review}, 58:\penalty0 100--550, 2025.
+
+\bibitem[Clark et~al.(2020)Clark, Tafjord, and Richardson]{Clark2020}
+Peter Clark, Oyvind Tafjord, and Kyle Richardson.
+\newblock Transformers as soft reasoners over language.
+\newblock In \emph{Proceedings of the 29th International Joint Conference on
+  Artificial Intelligence}, pages 3882--3890, 2020.
+\newblock \doi{10.24963/ijcai.2020/537}.
+
+\bibitem[Cotnareanu et~al.(2026)Cotnareanu, Ch{\'{e}}telat, Zhang, and
+  Coates]{Cotnareanu2026}
+Joseph Cotnareanu, Didier Ch{\'{e}}telat, Yingxue Zhang, and Mark Coates.
+\newblock A balanced neuro-symbolic approach for commonsense abductive logic.
+\newblock \emph{ArXiv}, abs/2601.18595, 2026.
+\newblock \doi{10.48550/arXiv.2601.18595}.
+
+\bibitem[Han et~al.(2024)Han, Schoelkopf, Zhao, Qi, Riddell, Benson, Sun,
+  Zubova, Qiao, Burtell, Peng, Fan, Liu, Wong, Sailor, Ni, Nan, Kasai, Yu,
+  Zhang, Joty, Fabbri, Kryscinski, Lin, Xiong, and Radev]{Han2024}
+Simeng Han, Hailey Schoelkopf, Yilun Zhao, Zhenting Qi, Martin Riddell, Luke
+  Benson, Lucy Sun, Ekaterina Zubova, Yujie Qiao, Matthew Burtell, David Peng,
+  Jonathan Fan, Yixin Liu, Brian Wong, Malcolm Sailor, Ansong Ni, Linyong Nan,
+  Jungo Kasai, Tao Yu, Rui Zhang, Shafiq Joty, Alexander~R. Fabbri, Wojciech
+  Kryscinski, Xi~Victoria Lin, Caiming Xiong, and Dragomir Radev.
+\newblock {FOLIO}: Natural language reasoning with first-order logic.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, 2024.
+\newblock \doi{10.48550/arXiv.2209.00840}.
+
+\bibitem[Lee and Hwang(2024)]{Lee2024}
+Jinu Lee and Wonseok Hwang.
+\newblock {SymBa}: Symbolic backward chaining for structured natural language
+  reasoning.
+\newblock In \emph{Proceedings of the 2025 North American Chapter of the
+  Association for Computational Linguistics}, pages 2468--2484, 2024.
+\newblock \doi{10.18653/v1/2025.naacl-long.124}.
+
+\bibitem[Li et~al.(2025)Li, Cheng, Liu, Wang, Zeng, and Liu]{Li2025}
+Qingchuan Li, Mingyue Cheng, Zirui Liu, Daoyu Wang, Yuting Zeng, and Tongxuan
+  Liu.
+\newblock From hypothesis to premises: {LLM}-based backward logical reasoning
+  with selective symbolic translation.
+\newblock In \emph{Proceedings of the 2025 AAAI Conference on Artificial
+  Intelligence}, 2025.
+\newblock \doi{10.48550/arXiv.2512.03360}.
+
+\bibitem[Mao et~al.(2019)Mao, Gan, Kohli, Tenenbaum, and Wu]{Mao2019}
+Jiayuan Mao, Chuang Gan, Pushmeet Kohli, Joshua~B. Tenenbaum, and Jiajun Wu.
+\newblock The neuro-symbolic concept learner: Interpreting scenes, words, and
+  sentences from natural supervision.
+\newblock In \emph{Proceedings of the 2019 International Conference on Learning
+  Representations}, 2019.
+
+\bibitem[Sato et~al.(2023)Sato, Ichinoseki, and Sano]{Sato2023}
+Taisuke Sato, Ryosuke Ichinoseki, and Satoshi Sano.
+\newblock Soft-unification in deep probabilistic logic.
+\newblock In \emph{Advances in Neural Information Processing Systems 36}, 2023.
+
+\bibitem[Sinha et~al.(2019)Sinha, Sodhani, Dong, Pineau, and
+  Hamilton]{Sinha2019}
+Koustuv Sinha, Shagun Sodhani, Jin Dong, Joelle Pineau, and William~L.
+  Hamilton.
+\newblock {CLUTRR}: A diagnostic benchmark for inductive reasoning from text.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing}, pages 4505--4514, 2019.
+\newblock \doi{10.18653/v1/D19-1458}.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Chi, Xia, Le, and
+  Zhou]{Wei2022}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed~H. Chi, Fei Xia,
+  Quoc Le, and Denny Zhou.
+\newblock Chain of thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~35, pages 24824--24837, 2022.
+\newblock \doi{10.48550/arXiv.2201.11903}.
+
+\bibitem[Yao et~al.(2023)Yao, Yu, Zhao, Shafran, Griffiths, Cao, and
+  Narasimhan]{Yao2023}
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas~L. Griffiths, Yuan
+  Cao, and Karthik Narasimhan.
+\newblock Tree of thoughts: Deliberate problem solving with large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems 36}, 2023.
+\newblock \doi{10.48550/arXiv.2305.10601}.
+
+\bibitem[Yi et~al.(2018)Yi, Wu, Gan, Torralba, Kohli, and Tenenbaum]{Mao2018}
+Kexin Yi, Jiajun Wu, Chuang Gan, Antonio Torralba, Pushmeet Kohli, and
+  Joshua~B. Tenenbaum.
+\newblock Neural-symbolic {VQA}: Disentangling reasoning from vision and
+  language understanding.
+\newblock In \emph{Advances in Neural Information Processing Systems 31}, pages
+  1039--1050, 2018.
+
+\bibitem[Zhou et~al.(2022)Zhou, Sch{\"{a}}rli, Hou, Wei, Scales, Wang,
+  Schuurmans, Bousquet, Le, and Chi]{Zhou2022}
+Denny Zhou, Nathanael Sch{\"{a}}rli, Le~Hou, Jason Wei, Nathan Scales, Xuezhi
+  Wang, Dale Schuurmans, Olivier Bousquet, Quoc Le, and Ed~H. Chi.
+\newblock Least-to-most prompting enables complex reasoning in large language
+  models.
+\newblock In \emph{Proceedings of the 10th International Conference on Learning
+  Representations}, 2022.
+\newblock \doi{10.48550/arXiv.2205.10625}.
+
+\end{thebibliography}
