@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "method_name": "BM25-Enforced Type-B Precision Recovery",
+    "description": "BM25 sparse retrieval to ground LLM on top-k passages for entailment verification",
+    "lm_model": "anthropic/claude-haiku-4.5",
+    "bm25_implementation": "bm25s",
+    "k_values_ablated": [
+      1,
+      3,
+      5
+    ],
+    "primary_k": 3,
+    "bm25_precision_k3": 0.9091,
+    "baseline_precision": 1.0,
+    "num_examples": 6,
+    "total_cost_usd": 0.0162
+  },
+  "datasets": [
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "The cow likes the tiger.",
+          "output": "entailment",
+          "predict_bm25_k3": "entailment",
+          "predict_baseline": "entailment",
+          "metadata_bm25_correct": "True",
+          "metadata_baseline_correct": "True",
+          "metadata_bm25_confidence": "1.0",
+          "metadata_grounding_span_match": "True",
+          "metadata_dataset": "ruletaker"
+        },
+        {
+          "input": "The cow does not need the cat.",
+          "output": "not entailment",
+          "predict_bm25_k3": "not entailment",
+          "predict_baseline": "not entailment",
+          "metadata_bm25_correct": "True",
+          "metadata_baseline_correct": "True",
+          "metadata_bm25_confidence": "0.99",
+          "metadata_grounding_span_match": "False",
+          "metadata_dataset": "ruletaker"
+        },
+        {
+          "input": "The lion needs the tiger.",
+          "output": "entailment",
+          "predict_bm25_k3": "not entailment",
+          "predict_baseline": "entailment",
+          "metadata_bm25_correct": "False",
+          "metadata_baseline_correct": "True",
+          "metadata_bm25_confidence": "0.95",
+          "metadata_grounding_span_match": "False",
+          "metadata_dataset": "ruletaker"
+        },
+        {
+          "input": "Bob is round.",
+          "output": "entailment",
+          "predict_bm25_k3": "entailment",
+          "predict_baseline": "entailment",
+          "metadata_bm25_correct": "True",
+          "metadata_baseline_correct": "True",
+          "metadata_bm25_confidence": "1.0",
+          "metadata_grounding_span_match": "True",
+          "metadata_dataset": "ruletaker"
+        }
+      ]
+    },
+    {
+      "dataset": "folio",
+      "examples": [
+        {
+          "input": "Rina doesn't want to be addicted to caffeine or is unaware that caffeine is a drug.",
+          "output": "True",
+          "predict_bm25_k3": "not entailment",
+          "predict_baseline": "not entailment",
+          "metadata_bm25_correct": "False",
+          "metadata_baseline_correct": "False",
+          "metadata_bm25_confidence": "0.5",
+          "metadata_grounding_span_match": "False",
+          "metadata_dataset": "folio"
+        },
+        {
+          "input": "Rina either regularly drinks coffee or is unaware that caffeine is a drug.",
+          "output": "False",
+          "predict_bm25_k3": "not entailment",
+          "predict_baseline": "not entailment",
+          "metadata_bm25_correct": "True",
+          "metadata_baseline_correct": "True",
+          "metadata_bm25_confidence": "0.95",
+          "metadata_grounding_span_match": "False",
+          "metadata_dataset": "folio"
+        }
+      ]
+    }
+  ]
+}

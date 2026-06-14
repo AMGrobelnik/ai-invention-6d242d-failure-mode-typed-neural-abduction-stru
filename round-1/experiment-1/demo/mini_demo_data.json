@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "method_name": "FMTNA",
+    "description": "Failure-Mode-Typed Neural Abduction pipeline with Type-A/B/C failure classification",
+    "baseline": "Undifferentiated single-prompt LLM abduction",
+    "dataset": "ruletaker_d0_d1",
+    "metrics": {
+      "n_examples": 3,
+      "proof_completion_rate": 0.0,
+      "hallucination_rate": 0.21666666666666667,
+      "grounding_ratio_mean": 0.3,
+      "fmtna_accuracy": 0.9333333333333333,
+      "baseline_accuracy": 1.0,
+      "accuracy_improvement_pct": -6.666666666666665,
+      "type_a_precision": 0.0,
+      "type_a_baseline_precision": 0.0,
+      "type_a_improvement_pct": 0.0,
+      "type_b_precision": 0.0,
+      "type_b_baseline_precision": 1.0,
+      "type_b_improvement_pct": -100.0,
+      "type_c_quality": 0.3076923076923077,
+      "type_a_total": 0,
+      "type_b_total": 2,
+      "type_c_total": 1
+    },
+    "token_usage": {
+      "total_tokens_input": 13451,
+      "total_tokens_output": 8002,
+      "estimated_cost_usd": 0.0428
+    },
+    "failure_type_distribution": {
+      "type_a": 0,
+      "type_b": 2,
+      "type_c": 1
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ruletaker_d0_d1",
+      "examples": [
+        {
+          "input": "Narrative: Anne is quiet. Anne is not young. Bob is kind. Bob is young. Dave is rough. Dave is round. Dave is smart. Dave is not young. Fiona is quiet. Fiona is not round. Kind, young things are not smart.\nQuery: Bob is kind.",
+          "output": "true",
+          "predict_fmtna": "true",
+          "predict_baseline": "true",
+          "metadata_failure_types": "none",
+          "metadata_dispatch_summary": "none",
+          "metadata_proof_trace": "direct_fact",
+          "metadata_grounding_ratio": "1.0",
+          "metadata_type_a_count": "0",
+          "metadata_type_b_count": "0",
+          "metadata_type_c_count": "0"
+        },
+        {
+          "input": "Narrative: Anne is quiet. Anne is not young. Bob is kind. Bob is young. Dave is rough. Dave is round. Dave is smart. Dave is not young. Fiona is quiet. Fiona is not round. Kind, young things are not smart.\nQuery: Dave is not smart.",
+          "output": "false",
+          "predict_fmtna": "false",
+          "predict_baseline": "false",
+          "metadata_failure_types": "B",
+          "metadata_dispatch_summary": "type_B:type_b",
+          "metadata_proof_trace": "backward_chain",
+          "metadata_grounding_ratio": "1.0",
+          "metadata_type_a_count": "0",
+          "metadata_type_b_count": "1",
+          "metadata_type_c_count": "0"
+        },
+        {
+          "input": "Narrative: Anne is quiet. Anne is not young. Bob is kind. Bob is young. Dave is rough. Dave is round. Dave is smart. Dave is not young. Fiona is quiet. Fiona is not round. Kind, young things are not smart.\nQuery: Bob is not smart.",
+          "output": "false",
+          "predict_fmtna": "false",
+          "predict_baseline": "false",
+          "metadata_failure_types": "B",
+          "metadata_dispatch_summary": "type_B:type_b",
+          "metadata_proof_trace": "backward_chain",
+          "metadata_grounding_ratio": "1.0",
+          "metadata_type_a_count": "0",
+          "metadata_type_b_count": "1",
+          "metadata_type_c_count": "0"
+        }
+      ]
+    }
+  ]
+}
