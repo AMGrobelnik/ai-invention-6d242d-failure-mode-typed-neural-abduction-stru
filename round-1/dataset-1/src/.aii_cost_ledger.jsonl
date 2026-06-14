@@ -1,0 +1,4 @@
+{"ts": 1781468370.9164073, "tool": "aii_web_tools__search", "cost_usd": 0.001, "query": "RuleTaker dataset Clark 2020 transformers soft reasoners benchmark", "count": 5}
+{"ts": 1781468370.9733627, "tool": "aii_web_tools__search", "cost_usd": 0.001, "query": "FOLIO dataset first-order logic natural language reasoning Yale", "count": 5}
+{"ts": 1781468371.0707986, "tool": "aii_web_tools__search", "cost_usd": 0.001, "query": "ProofWriter dataset allenai multi-hop reasoning benchmark paper", "count": 5}
+{"ts": 1781468371.3218896, "tool": "aii_web_tools__search", "cost_usd": 0.001, "query": "LogicalReasoning-hard flaitenberger dataset FOL natural language", "count": 5}

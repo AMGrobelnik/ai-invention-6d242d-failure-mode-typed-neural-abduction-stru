@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "source": "HuggingFace: tasksource/ruletaker, tasksource/folio",
+    "description": "Neuro-symbolic reasoning benchmarks for FMTNA pipeline evaluation",
+    "datasets": [
+      "ruletaker",
+      "folio"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. T...",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 0,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        },
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. T...",
+          "output": "not entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 1,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        },
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. T...",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 2,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        }
+      ]
+    },
+    {
+      "dataset": "folio",
+      "examples": [
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ∨ (¬AwareThatDrug(rina, caffeine))",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1126",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 0
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ⊕ ¬AwareThatDrug(rina, caffeine)",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1127",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 1
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "False",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "DrinkRegularly(rina, coffee)  ⊕ IsUnawareThatCaffeineIsADrug(rina)",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1128",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 2
+        }
+      ]
+    }
+  ]
+}

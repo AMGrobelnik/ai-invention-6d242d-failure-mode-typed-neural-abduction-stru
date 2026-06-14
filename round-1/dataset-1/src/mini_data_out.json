@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "source": "HuggingFace: tasksource/ruletaker, tasksource/folio",
+    "description": "Neuro-symbolic reasoning benchmarks for FMTNA pipeline evaluation",
+    "datasets": [
+      "ruletaker",
+      "folio"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. The lion chases the tiger. The lion is young. The tiger needs the lion. If someone likes the cat then they are young. If the cow chases the lion then the lion needs the tiger. If someone chases the cat then they are cold. If someone is young then they chase the lion. If someone likes the cow and the cow chases the lion then the cow chases the tiger. If someone likes the lion and they chase the lion then the lion is cold. If someone likes the tiger and the tiger needs the cow then they chase the cow. If someone needs the cat and the cat likes the tiger then they are young.\nQuestion: The cow likes the tiger.",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 0,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        },
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. The lion chases the tiger. The lion is young. The tiger needs the lion. If someone likes the cat then they are young. If the cow chases the lion then the lion needs the tiger. If someone chases the cat then they are cold. If someone is young then they chase the lion. If someone likes the cow and the cow chases the lion then the cow chases the tiger. If someone likes the lion and they chase the lion then the lion is cold. If someone likes the tiger and the tiger needs the cow then they chase the cow. If someone needs the cat and the cat likes the tiger then they are young.\nQuestion: The cow does not need the cat.",
+          "output": "not entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 1,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        },
+        {
+          "input": "Context: The cat chases the cow. The cat is big. The cat is red. The cat is round. The cat is young. The cat needs the tiger. The cow chases the lion. The cow likes the tiger. The cow needs the cat. The lion chases the tiger. The lion is young. The tiger needs the lion. If someone likes the cat then they are young. If the cow chases the lion then the lion needs the tiger. If someone chases the cat then they are cold. If someone is young then they chase the lion. If someone likes the cow and the cow chases the lion then the cow chases the tiger. If someone likes the lion and they chase the lion then the lion is cold. If someone likes the tiger and the tiger needs the cow then they chase the cow. If someone needs the cat and the cat likes the tiger then they are young.\nQuestion: The lion needs the tiger.",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-1",
+          "metadata_row_index": 2,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment"
+        }
+      ]
+    },
+    {
+      "dataset": "folio",
+      "examples": [
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted to caffeine is unaware that caffeine is a drug.\nRina is either a student who is unaware that caffeine is a drug, or she is not a student and is she aware that caffeine is a drug.\nRina  is either a student who is dependent on caffeine, or she is not a student and not dependent on caffeine.\nConclusion: Rina doesn't want to be addicted to caffeine or is unaware that caffeine is a drug.",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(Student(rina) ⊕  ¬AwareThatDrug(rina, caffeine))\n¬(IsDependentOn(rina, caffeine) ⊕ Student(rina))",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ∨ (¬AwareThatDrug(rina, caffeine))",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1126",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 0
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted to caffeine is unaware that caffeine is a drug.\nRina is either a student who is unaware that caffeine is a drug, or she is not a student and is she aware that caffeine is a drug.\nRina  is either a student who is dependent on caffeine, or she is not a student and not dependent on caffeine.\nConclusion: Rina eith doesn't want to be addicted to caffeine or is unaware that caffeine is a drug.",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(Student(rina) ⊕  ¬AwareThatDrug(rina, caffeine))\n¬(IsDependentOn(rina, caffeine) ⊕ Student(rina))",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ⊕ ¬AwareThatDrug(rina, caffeine)",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1127",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 1
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted to caffeine is unaware that caffeine is a drug.\nRina is either a student who is unaware that caffeine is a drug, or she is not a student and is she aware that caffeine is a drug.\nRina  is either a student who is dependent on caffeine, or she is not a student and not dependent on caffeine.\nConclusion: Rina either regularly drinks coffee or is unaware that caffeine is a drug.",
+          "output": "False",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(Student(rina) ⊕  ¬AwareThatDrug(rina, caffeine))\n¬(IsDependentOn(rina, caffeine) ⊕ Student(rina))",
+          "metadata_conclusion_fol": "DrinkRegularly(rina, coffee)  ⊕ IsUnawareThatCaffeineIsADrug(rina)",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1128",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 2
+        }
+      ]
+    }
+  ]
+}

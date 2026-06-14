@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "method_name": "FMTNA",
+    "description": "Failure-Mode-Typed Neural Abduction with typed LLM dispatch",
+    "benchmark_names": [
+      "ruletaker",
+      "folio"
+    ],
+    "dataset_sizes": {
+      "ruletaker": 200,
+      "folio": 100
+    },
+    "lm_model": "google/gemini-3.1-flash-lite",
+    "cost_usd": 0.1385,
+    "lm_api_calls": 677,
+    "ruletaker_depths_evaluated": [
+      "depth-0",
+      "depth-1",
+      "depth-3"
+    ],
+    "results_summary": {
+      "ruletaker": {
+        "overall_fmtna": {
+          "accuracy": 0.735,
+          "correct": 147,
+          "total": 200,
+          "grounding_ratio_mean": 0.1683,
+          "grounding_ratio_std": 0.3916,
+          "failure_type_A_count": 67,
+          "failure_type_B_count": 104,
+          "failure_type_C_count": 0,
+          "failure_type_A_pct": 0.3918,
+          "failure_type_B_pct": 0.6082,
+          "failure_type_C_pct": 0.0
+        },
+        "overall_baseline": {
+          "accuracy": 0.655,
+          "correct": 131,
+          "total": 200
+        },
+        "by_depth": [
+          {
+            "depth": "depth-0",
+            "n_examples": 50,
+            "fmtna_accuracy": 0.82,
+            "baseline_accuracy": 0.74,
+            "type_a_count": 22,
+            "type_b_count": 21,
+            "type_c_count": 0,
+            "type_a_pct": 0.5116,
+            "type_b_pct": 0.4884,
+            "type_c_pct": 0.0,
+            "mean_grounding_ratio": 0.18
+          },
+          {
+            "depth": "depth-1",
+            "n_examples": 50,
+            "fmtna_accuracy": 0.84,
+            "baseline_accuracy": 0.62,
+            "type_a_count": 14,
+            "type_b_count": 20,
+            "type_c_count": 0,
+            "type_a_pct": 0.4118,
+            "type_b_pct": 0.5882,
+            "type_c_pct": 0.0,
+            "mean_grounding_ratio": 0.09
+          },
+          {
+            "depth": "depth-3",
+            "n_examples": 50,
+            "fmtna_accuracy": 0.62,
+            "baseline_accuracy": 0.58,
+            "type_a_count": 15,
+            "type_b_count": 34,
+            "type_c_count": 0,
+            "type_a_pct": 0.3061,
+            "type_b_pct": 0.6939,
+            "type_c_pct": 0.0,
+            "mean_grounding_ratio": 0.2033
+          }
+        ],
+        "failure_type_distribution_table": "| Depth | N | FMTNA Acc | Baseline Acc | Type-A% | Type-B% | Type-C% | Grounding |\n|-------|---|-----------|--------------|---------|---------|---------|-----------|\n| depth-0 | 50 | 0.820 | 0.740 | 0...",
+        "depth_analysis_plot_data": {
+          "depths": [
+            "depth-0",
+            "depth-1",
+            "depth-3"
+          ],
+          "type_a_pcts": [
+            0.5116,
+            0.4118,
+            0.3061
+          ],
+          "type_b_pcts": [
+            0.4884,
+            0.5882,
+            0.6939
+          ],
+          "type_c_pcts": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fmtna_accuracy": [
+            0.82,
+            0.84,
+            0.62
+          ],
+          "baseline_accuracy": [
+            0.74,
+            0.62,
+            0.58
+          ]
+        }
+      },
+      "folio": {
+        "fmtna": {
+          "accuracy": 0.57,
+          "correct": 57,
+          "total": 100,
+          "grounding_ratio_mean": 0.8834,
+          "grounding_ratio_std": 0.1816,
+          "failure_type_A_count": 65,
+          "failure_type_B_count": 0,
+          "failure_type_C_count": 0,
+          "failure_type_A_pct": 1.0,
+          "failure_type_B_pct": 0.0,
+          "failure_type_C_pct": 0.0
+        },
+        "baseline": {
+          "accuracy": 0.61,
+          "correct": 61,
+          "total": 100
+        },
+        "type_a_comparison_with_ruletaker": {
+          "ruletaker_type_a_count": 67,
+          "ruletaker_total_failures": 171,
+          "ruletaker_type_a_rate": 0.3918,
+          "folio_type_a_count": 65,
+          "folio_total_failures": 65,
+          "folio_type_a_rate": 1.0,
+          "chi2_test": {
+            "chi2": 70.6787,
+            "p_value": 0.0,
+            "significant": true
+          },
+          "hypothesis_confirmed": true
+        }
+      },
+      "baseline_comparison": {
+        "subset_size": 30,
+        "fmtna_accuracy": 0.8,
+        "baseline_accuracy": 0.5,
+        "fmtna_type_b_span_precision": 0.0,
+        "fmtna_hallucination_exposure": 0.9167,
+        "fmtna_advantage_accuracy": 0.3
+      },
+      "hypothesis_checks": {
+        "type_a_higher_in_folio": true,
+        "type_a_folio_rate": 1.0,
+        "type_a_ruletaker_rate": 0.3918,
+        "fmtna_outperforms_baseline": true
+      }
+    },
+    "logs": {
+      "sample_failure_records": [
+        {
+          "type": "A",
+          "goal": "Context: Bob is big. Harry is not quiet. If someone is kind and not quiet then they are blue. All bi",
+          "context": "depth=depth-0",
+          "resolution_source": "llm_dispatch",
+          "true_label": "entailment",
+          "fmtna_prediction": "entailment"
+        },
+        {
+          "type": "A",
+          "goal": "Context: Bob is big. Harry is not quiet. If someone is kind and not quiet then they are blue. All bi",
+          "context": "depth=depth-0",
+          "resolution_source": "llm_dispatch",
+          "true_label": "entailment",
+          "fmtna_prediction": "entailment"
+        },
+        {
+          "type": "B",
+          "goal": "Context: The bald eagle visits the cat. The cat does not chase the bald eagle. The tiger chases the ",
+          "context": "depth=depth-0",
+          "resolution_source": "llm_dispatch",
+          "true_label": "entailment",
+          "fmtna_prediction": "entailment"
+        }
+      ],
+      "lm_api_calls": 677,
+      "total_cost_usd": 0.1385,
+      "total_input_tokens": 170798,
+      "total_output_tokens": 63840
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "Context: Bob is big. Harry is not quiet. If someone is kind and not quiet then they are blue. All big, round people are not kind. If someone is blue and rough then they are big. All red, kind people a...",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-0",
+          "metadata_row_index": 67154,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment",
+          "predict_fmtna": "entailment",
+          "predict_baseline": "entailment",
+          "metadata_fmtna_success": false,
+          "metadata_fmtna_failure_types": {
+            "A": 2,
+            "B": 0,
+            "C": 0,
+            "DEPTH": 0
+          },
+          "metadata_fmtna_grounding_ratio": 1.0,
+          "metadata_fmtna_proof_steps": 0,
+          "metadata_fmtna_llm_calls": 2,
+          "metadata_baseline_llm_calls": 2
+        },
+        {
+          "input": "Context: Bob is big. Harry is not quiet. If someone is kind and not quiet then they are blue. All big, round people are not kind. If someone is blue and rough then they are big. All red, kind people a...",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-0",
+          "metadata_row_index": 67155,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment",
+          "predict_fmtna": "entailment",
+          "predict_baseline": "entailment",
+          "metadata_fmtna_success": false,
+          "metadata_fmtna_failure_types": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "DEPTH": 0
+          },
+          "metadata_fmtna_grounding_ratio": 0.0,
+          "metadata_fmtna_proof_steps": 0,
+          "metadata_fmtna_llm_calls": 1,
+          "metadata_baseline_llm_calls": 2
+        },
+        {
+          "input": "Context: The bald eagle visits the cat. The cat does not chase the bald eagle. The tiger chases the bald eagle. If someone does not visit the tiger then they chase the tiger. If someone is cold then t...",
+          "output": "entailment",
+          "metadata_split": "dev",
+          "metadata_config": "depth-0",
+          "metadata_row_index": 67157,
+          "metadata_task_type": "logical_reasoning",
+          "metadata_answer_type": "entailment",
+          "predict_fmtna": "entailment",
+          "predict_baseline": "entailment",
+          "metadata_fmtna_success": false,
+          "metadata_fmtna_failure_types": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "DEPTH": 0
+          },
+          "metadata_fmtna_grounding_ratio": 0.0,
+          "metadata_fmtna_proof_steps": 0,
+          "metadata_fmtna_llm_calls": 1,
+          "metadata_baseline_llm_calls": 2
+        }
+      ]
+    },
+    {
+      "dataset": "folio",
+      "examples": [
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ∨ (¬AwareThatDrug(rina, caffeine))",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1126",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 0,
+          "predict_fmtna": "Uncertain",
+          "predict_baseline": "Uncertain",
+          "metadata_fmtna_llm_calls": 1,
+          "metadata_baseline_llm_calls": 1,
+          "metadata_fmtna_failure_types": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "metadata_fmtna_grounding_ratio": 1.0
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "¬WantToBeAddictedTo(rina, caffeine) ⊕ ¬AwareThatDrug(rina, caffeine)",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1127",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 1,
+          "predict_fmtna": "True",
+          "predict_baseline": "Uncertain",
+          "metadata_fmtna_llm_calls": 1,
+          "metadata_baseline_llm_calls": 1,
+          "metadata_fmtna_failure_types": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "metadata_fmtna_grounding_ratio": 1.0
+        },
+        {
+          "input": "Premises:\nAll people who regularly drink coffee are dependent on caffeine.\nPeople regularly drink coffee, or they don't want to be addicted to caffeine, or both.\nNo one who doesn't want to be addicted...",
+          "output": "True",
+          "metadata_premises_fol": "∀x (DrinkRegularly(x, coffee) → IsDependentOn(x, caffeine))\n∀x (DrinkRegularly(x, coffee)  ∨ (¬WantToBeAddictedTo(x, caffeine)))\n∀x (¬WantToBeAddictedTo(x, caffeine) → ¬AwareThatDrug(x, caffeine))\n¬(S...",
+          "metadata_conclusion_fol": "(DoNotWantToBeAddictedToCaffeine(rina) ⊕ ¬AwareThatDrug(rina, caffeine)) → ¬(¬WantToBeAddictedTo(rina, caffeine) ∧ DrinkRegularly(rina, coffee))",
+          "metadata_story_id": "406",
+          "metadata_example_id": "1129",
+          "metadata_split": "train",
+          "metadata_task_type": "fol_reasoning",
+          "metadata_answer_type": "true_false_uncertain",
+          "metadata_row_index": 3,
+          "predict_fmtna": "Uncertain",
+          "predict_baseline": "Uncertain",
+          "metadata_fmtna_llm_calls": 1,
+          "metadata_baseline_llm_calls": 1,
+          "metadata_fmtna_failure_types": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "metadata_fmtna_grounding_ratio": 1.0
+        }
+      ]
+    }
+  ]
+}

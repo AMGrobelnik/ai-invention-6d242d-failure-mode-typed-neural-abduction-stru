@@ -1,0 +1,15 @@
+[project]
+name = "type-b-precision-recovery"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "bm25s==0.3.9",
+    "certifi==2026.5.20",
+    "charset-normalizer==3.4.7",
+    "idna==3.18",
+    "loguru==0.7.3",
+    "numpy==2.4.6",
+    "requests==2.34.2",
+    "scipy==1.17.1",
+    "urllib3==2.7.0",
+]
